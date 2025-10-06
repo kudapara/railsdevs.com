@@ -59,13 +59,6 @@ RUN apt-get update -qq && \
     apt-get install --no-install-recommends -y gnupg wget nodejs curl libpq-dev libsqlite3-0 libvips&& \
     rm -rf /var/lib/apt/lists /var/cache/apt/archives
 
-# Add Google Chrome signing key and repo
-RUN wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key add - && \
-    sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
-
-# Install Chrome
-RUN apt-get update && apt-get install -y google-chrome-stable && apt-get clean
-
 # Copy built artifacts: gems, application
 COPY --from=build /usr/local/bundle /usr/local/bundle
 COPY --from=build /rails /rails
