@@ -1,0 +1,26 @@
+# Development override for docker-compose.yml
+# This file is automatically loaded by docker-compose for development
+version: '3.8'
+
+services:
+  web:
+    environment:
+      - RAILS_ENV=development
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/tmp
+    command: bundle exec rails server -b 0.0.0.0
+
+  worker:
+    environment:
+      - RAILS_ENV=development
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/tmp
+
+  # Development database with different name
+  postgres:
+    environment:
+      POSTGRES_DB: railsdevs_development
