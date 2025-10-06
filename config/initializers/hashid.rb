@@ -1,5 +1,5 @@
 Hashid::Rails.configure do |config|
-  salt = Rails.application.credentials.dig(:hashid, :salt)
+  salt = Rails.application.credentials.dig(:hashid, :salt) || 'saltbae-dubai'
   raise "Missing hashid salt in production!" if salt.blank? && Rails.env.production?
 
   config.salt = salt
