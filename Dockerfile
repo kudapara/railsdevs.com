@@ -11,6 +11,8 @@ WORKDIR /rails
 ENV BUNDLE_DEPLOYMENT="1" \
     BUNDLE_PATH="/usr/local/bundle" 
 #   BUNDLE_WITHOUT="development"
+# So that it install all gems
+ENV RAILS_ENV="production"
 
 # Throw-away build stage to reduce size of final image
 FROM base AS build
