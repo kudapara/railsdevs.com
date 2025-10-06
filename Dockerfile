@@ -40,6 +40,11 @@ RUN bundle config --global frozen 1 && \
 # Copy application code
 COPY . .
 
+# Set environment variables
+ENV RAILS_ENV=production
+ENV RAILS_SERVE_STATIC_FILES=true
+ENV RAILS_LOG_TO_STDOUT=true
+
 # Precompile assets
 RUN bundle exec rails assets:precompile
 
@@ -49,16 +54,11 @@ RUN chown -R app:app /app
 USER app
 
 # Expose port
-EXPOSE 3000
-
-# Set environment variables
-ENV RAILS_ENV=production
-ENV RAILS_SERVE_STATIC_FILES=true
-ENV RAILS_LOG_TO_STDOUT=true
+EXPOSE 3003
 
 # Health check
 HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
-  CMD curl -f http://localhost:3000/ || exit 1
+  CMD curl -f http://localhost:3003/ || exit 1
 
 # Start the application
 CMD ["bundle", "exec", "puma", "-C", "config/puma.rb"]
