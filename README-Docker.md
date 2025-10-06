@@ -21,9 +21,6 @@ RAILSDEVS_DATABASE_PASSWORD=your_secure_database_password_here
 # Application Host (replace with your actual domain)
 HOST=your-domain.com
 ```
-
-**Important**: Update the `Caddyfile` to replace `your-domain.com` with your actual domain name for automatic HTTPS to work.
-
 ## Production Deployment
 
 ### 1. Build and Start Services

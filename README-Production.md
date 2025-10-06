@@ -44,12 +44,7 @@ WEB_CONCURRENCY=2
 WEB_REPLICAS=2
 WORKER_REPLICAS=2
 ```
-
-### 3. Update Caddyfile
-
-Replace `your-domain.com` in the `Caddyfile` with your actual domain name.
-
-### 4. Deploy
+### 3. Deploy
 
 ```bash
 # Build and start all services
