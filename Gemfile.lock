@@ -187,7 +187,6 @@ GEM
       hashids (~> 1.0)
     hashids (1.0.6)
     highline (2.0.3)
-    honeybadger (4.9.0)
     hotwire-livereload (1.2.0)
       listen (>= 3.0.0)
       rails (>= 6.0.0)
@@ -478,7 +477,6 @@ DEPENDENCIES
   geocoder
   groupdate
   hashid-rails
-  honeybadger
   hotwire-livereload
   hotwire-rails
   i18n-tasks

@@ -49,7 +49,7 @@ gem "fathom_api", require: false
 gem "geocoder"
 gem "groupdate"
 gem "hashid-rails"
-gem "honeybadger"
+# gem "honeybadger"
 gem "image_processing"
 gem "inline_svg"
 gem "invisible_captcha"
