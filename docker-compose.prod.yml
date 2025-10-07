@@ -63,7 +63,7 @@ services:
       - RAILS_MAX_THREADS=${RAILS_MAX_THREADS:-5}
       - WEB_CONCURRENCY=${WEB_CONCURRENCY:-2}
     ports:
-      - "3003:3003"
+      - "3004:3004"
     depends_on:
       postgres:
         condition: service_healthy
@@ -82,7 +82,7 @@ services:
           memory: 512M
           cpus: '0.5'
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:3003/up"]
+      test: ["CMD", "curl", "-f", "http://localhost:3004/up"]
       interval: 30s
       timeout: 10s
       retries: 3
@@ -151,3 +151,4 @@ volumes:
 networks:
   default:
     driver: bridge
+

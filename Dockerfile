@@ -69,11 +69,11 @@ RUN useradd rails --create-home --shell /bin/bash && \
 USER rails:rails
 
 # Expose port
-EXPOSE 3003
+EXPOSE 3004
 
 # Health check
 HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
-  CMD curl -f http://localhost:3003/ || exit 1
+  CMD curl -f http://localhost:3004/ || exit 1
 
 # Start the application
-CMD ["bundle", "exec", "rails", "server", "-b", "0.0.0.0", "-p", "3003"]
+CMD ["bundle", "exec", "rails", "server", "-b", "0.0.0.0", "-p", "3004"]
