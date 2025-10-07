@@ -86,22 +86,6 @@ GEM
       gemoji (~> 4.0.0.rc2)
       redcarpet (~> 3.5)
       rinku (~> 2.0)
-    aws-eventstream (1.2.0)
-    aws-partitions (1.519.0)
-    aws-sdk-core (3.121.3)
-      aws-eventstream (~> 1, >= 1.0.2)
-      aws-partitions (~> 1, >= 1.239.0)
-      aws-sigv4 (~> 1.1)
-      jmespath (~> 1.0)
-    aws-sdk-kms (1.50.0)
-      aws-sdk-core (~> 3, >= 3.121.2)
-      aws-sigv4 (~> 1.1)
-    aws-sdk-s3 (1.104.0)
-      aws-sdk-core (~> 3, >= 3.121.2)
-      aws-sdk-kms (~> 1)
-      aws-sigv4 (~> 1.4)
-    aws-sigv4 (1.4.0)
-      aws-eventstream (~> 1, >= 1.0.2)
     base64 (0.2.0)
     bcrypt (3.1.18)
     better_html (1.0.16)
@@ -484,7 +468,6 @@ PLATFORMS
 DEPENDENCIES
   apnotic
   auto_html
-  aws-sdk-s3
   capybara
   classy-yaml
   cssbundling-rails
