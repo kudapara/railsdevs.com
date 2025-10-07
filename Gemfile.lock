@@ -228,7 +228,6 @@ GEM
       nokogiri (>= 1.6)
     invisible_captcha (2.0.0)
       rails (>= 5.0)
-    jmespath (1.6.1)
     jsbundling-rails (1.0.0)
       railties (>= 6.0.0)
     json (2.6.1)
@@ -396,8 +395,6 @@ GEM
       ffi (~> 1.12)
     ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
-    scout_apm (5.1.1)
-      parser
     selenium-webdriver (4.12.0)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
@@ -510,7 +507,6 @@ DEPENDENCIES
   redcarpet
   redis
   rexml (>= 3.2.5)
-  scout_apm
   selenium-webdriver (>= 4.11.0)
   sidekiq
   sitemap_generator
