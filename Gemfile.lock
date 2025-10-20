@@ -86,22 +86,6 @@ GEM
       gemoji (~> 4.0.0.rc2)
       redcarpet (~> 3.5)
       rinku (~> 2.0)
-    aws-eventstream (1.2.0)
-    aws-partitions (1.519.0)
-    aws-sdk-core (3.121.3)
-      aws-eventstream (~> 1, >= 1.0.2)
-      aws-partitions (~> 1, >= 1.239.0)
-      aws-sigv4 (~> 1.1)
-      jmespath (~> 1.0)
-    aws-sdk-kms (1.50.0)
-      aws-sdk-core (~> 3, >= 3.121.2)
-      aws-sigv4 (~> 1.1)
-    aws-sdk-s3 (1.104.0)
-      aws-sdk-core (~> 3, >= 3.121.2)
-      aws-sdk-kms (~> 1)
-      aws-sigv4 (~> 1.4)
-    aws-sigv4 (1.4.0)
-      aws-eventstream (~> 1, >= 1.0.2)
     base64 (0.2.0)
     bcrypt (3.1.18)
     better_html (1.0.16)
@@ -203,7 +187,6 @@ GEM
       hashids (~> 1.0)
     hashids (1.0.6)
     highline (2.0.3)
-    honeybadger (4.9.0)
     hotwire-livereload (1.2.0)
       listen (>= 3.0.0)
       rails (>= 6.0.0)
@@ -244,7 +227,6 @@ GEM
       nokogiri (>= 1.6)
     invisible_captcha (2.0.0)
       rails (>= 5.0)
-    jmespath (1.6.1)
     jsbundling-rails (1.0.0)
       railties (>= 6.0.0)
     json (2.6.1)
@@ -412,8 +394,6 @@ GEM
       ffi (~> 1.12)
     ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
-    scout_apm (5.1.1)
-      parser
     selenium-webdriver (4.12.0)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
@@ -484,7 +464,6 @@ PLATFORMS
 DEPENDENCIES
   apnotic
   auto_html
-  aws-sdk-s3
   capybara
   classy-yaml
   cssbundling-rails
@@ -498,7 +477,6 @@ DEPENDENCIES
   geocoder
   groupdate
   hashid-rails
-  honeybadger
   hotwire-livereload
   hotwire-rails
   i18n-tasks
@@ -527,7 +505,6 @@ DEPENDENCIES
   redcarpet
   redis
   rexml (>= 3.2.5)
-  scout_apm
   selenium-webdriver (>= 4.11.0)
   sidekiq
   sitemap_generator

@@ -1,5 +1,6 @@
 def stripe_price_id(subscription)
   credentials = Rails.application.credentials
+  return nil if credentials.dig(:stripe).nil?
   if Rails.env.development?
     credentials.dig(:stripe, :price_ids, subscription) ||
       "#{subscription}_dummy_stripe_price_id"
@@ -10,6 +11,7 @@ end
 
 def revenue_cat_product_identifier(subscription)
   credentials = Rails.application.credentials
+  return nil if credentials.dig(:revenue_cat).nil?
   if Rails.env.development?
     credentials.dig(:revenue_cat, :product_identifiers, subscription) ||
       "#{subscription}_dummy_revenue_cat_product_identifier"

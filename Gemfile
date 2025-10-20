@@ -39,7 +39,7 @@ end
 
 gem "apnotic"
 gem "auto_html"
-gem "aws-sdk-s3", require: false
+# gem "aws-sdk-s3", require: false
 gem "classy-yaml"
 gem "devise"
 gem "devise-i18n"
@@ -49,7 +49,7 @@ gem "fathom_api", require: false
 gem "geocoder"
 gem "groupdate"
 gem "hashid-rails"
-gem "honeybadger"
+# gem "honeybadger"
 gem "image_processing"
 gem "inline_svg"
 gem "invisible_captcha"
@@ -66,7 +66,7 @@ gem "rack-attack"
 gem "rails-i18n"
 gem "redcarpet"
 gem "rexml", ">= 3.2.5"
-gem "scout_apm"
+# gem "scout_apm"
 gem "sidekiq"
 gem "sitemap_generator"
 gem "stripe"

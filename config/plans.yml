@@ -2,18 +2,18 @@ shared:
   legacy:
     name: Legacy
     price: 99
-    stripe_price_id: <%= stripe_price_id(:legacy) %>
-    revenue_cat_product_identifier:
+    stripe_price_id: price_legacy_123
+    revenue_cat_product_identifier: legacy_plan_rc_123
   part_time:
     name: Part-time
     price: 99
-    stripe_price_id: <%= stripe_price_id(:part_time) %>
-    revenue_cat_product_identifier: <%= revenue_cat_product_identifier(:part_time) %>
+    stripe_price_id: price_part_time_456
+    revenue_cat_product_identifier: part_time_plan_rc_456
   full_time:
     name: Full-time
     price: 299
-    stripe_price_id: <%= stripe_price_id(:full_time) %>
-    revenue_cat_product_identifier: <%= revenue_cat_product_identifier(:full_time) %>
+    stripe_price_id: price_full_time_789
+    revenue_cat_product_identifier: full_time_plan_rc_789
   free:
     name: Free
     price: 0
